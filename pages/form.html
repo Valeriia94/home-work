@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="../style.css/style-form.css">
+</head>
+
+<body>
+
+    <nav>
+        <header class="header-menu">
+            <a href="form.html"><img src="../images/logo.png" alt="logo" class="logo"></a>
+            <a href="../index.html">Main</a>
+            <a href="about.html">About Jessy</a>
+            <a href="articles.html">Articles about Jack Russells</a>
+            <a href="contacts.html">My Contacts</a>
+            <a href="gallery.html">Photo of Jessy</a>
+            <a href="form.html">Application Form</a>
+        </header>
+    </nav>
+
+    <div class="headline">
+        <h1>Fill out the form</h1>
+    </div>
+    <div class="content">
+        <i>You can subscribe to us if:</i>
+        <ul>
+            <li>You like Jack Russells</li>
+            <li>If dogs' lives are interesting to you</li>
+            <li>In the future, you will have a dog</li>
+        </ul>
+    </div>
+
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+38 (XXX) XXX-XX-XX"
+                    pattern="\+38\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" title="Format: +38 (XXX) XXX-XX-XX">
+            </div>
+
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Your city">
+            </div>
+
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="" selected disabled>Select your country</option>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="poland">Poland</option>
+                    <option value="germany">Germany</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Send form</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+
+        <footer>
+            <ul>
+                <li><a href="#top">Back to top</a></li>
+            </ul>
+        </footer>
+
+    </form>
+
+</body>
+
+</html>
